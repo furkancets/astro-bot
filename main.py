@@ -6,8 +6,10 @@ from src.clickExpectingStartMap import get_expected_chartsTo_clipboard
 from src.convertingInfoasDataframe import saveInfostoExcel
 from constants import USERINFO
 from src.config import CONFIG
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
 
-#def astrobot(): #it will be main function
+#def astrobot(): #it will be main function #test case'i yaz artık.
 
 begin = time.time()
 
