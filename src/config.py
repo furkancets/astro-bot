@@ -1,0 +1,3 @@
+
+class CONFIG:
+    TEST = True
