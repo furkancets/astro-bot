@@ -2,7 +2,7 @@ import pandas as pd
 import time
 from src.callSolarFire import start_solar_fire
 from src.userInputs import collecting_user_info
-from src.clickExpectingStartMap import get_expected_chartsTo_clipboard
+from src.clickExpectingStarMap import get_expected_chartsTo_clipboard
 from src.convertingInfoasDataframe import saveInfostoExcel
 from constants import USERINFO
 from src.config import CONFIG
@@ -33,8 +33,5 @@ def astrobot():
     return pd.read_excel(f'{path}'), fin_time
 
 
-print('beklemece')
-
-astrobot()
-
-print("beklemece")
+if __name__ == "__main__":
+    astrobot()
