@@ -11,28 +11,30 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 #def astrobot(): #it will be main function #test case'i yaz artık.
 
-begin = time.time()
 
-start_solar_fire()
+def astrobot():
 
-collecting_user_info()
+    begin = time.time()
 
-get_expected_chartsTo_clipboard()
+    start_solar_fire()
 
-saveInfostoExcel()
+    collecting_user_info()
 
-path = f"C:/Users/Asus/Desktop/solarFire/{USERINFO.NAME.replace(' ','_')}.xlsx"
+    get_expected_chartsTo_clipboard()
 
-df = pd.read_excel(f'{path}')
+    saveInfostoExcel()
 
-fin_time = (time.time() - begin) / 60
+    path = f"C:/Users/Asus/Desktop/solarFire/{USERINFO.NAME.replace(' ','_')}.xlsx"
 
-print(f"Programın çıktı süresi {fin_time} dakikadır. ")
+    fin_time = (time.time() - begin) / 60
+
+    print(f"Programın çıktı süresi {fin_time} dakikadır. ")
+
+    return pd.read_excel(f'{path}'), fin_time
+
 
 print('beklemece')
 
-#return df
+astrobot()
 
-#if __name__ == '__main__':
-#    CONFIG.TEST = True
-#    astrobot()
+print("beklemece")

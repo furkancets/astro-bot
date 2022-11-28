@@ -1,3 +1,3 @@
 
 class CONFIG:
-    TEST = True
+    TEST = False
